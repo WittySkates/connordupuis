@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import TopNav from './components/TopNav/TopNav';
+import Card from "./components/Card/Card";
+import { experienceData } from "./components/Card/cardData";
+import './App.scss';
 
-function App() {
+const  App = () => {
   return (
+    <>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+        <TopNav/>
+        <div className="section" id="experience">
+          <div className="experienceGrid">
+            {Object.keys(experienceData).map((map, index)=>(
+              <Card key={index} data={experienceData[map]}/>
+            ))}
+          </div>
+          
+        </div>
+      </div>
+
+    </>
   );
 }
 

@@ -1,0 +1,13 @@
+@import "../../../colors.scss";
+
+.navBar {
+  background-color: $nav-color;
+  border-bottom: 3px solid #1b1b1b;
+}
+.navBrand {
+  padding-left: 10px;
+}
+
+.navLink {
+  // color: $text-accent !important;
+}
