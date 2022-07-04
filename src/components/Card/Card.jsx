@@ -5,10 +5,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles/card.scss";
 
 const Card = (props) => {
-    const {data:{title, tldr, description, languages, source, live}} = props;
+    const {data:{title, tldr, description, languages, source, live}, color} = props;
+    
   return (
     <>
-    <div className="cardBox">
+    <div className="cardBox" style={{backgroundColor: color}}>
 
         <div className="cardText">
             <div className="cardTitle">

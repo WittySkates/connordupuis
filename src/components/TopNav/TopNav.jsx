@@ -9,6 +9,14 @@ import "./styles/topnav.scss";
 
 const TopNav = () => {
 
+const scrollInto = (id) =>{
+  document.getElementById(id).scrollIntoView({
+    block: "start",
+    inline:"nearest",
+    behavior: "smooth",
+  });
+}
+
   return (
     <>
       <Navbar expand="sm" variant="dark" className="navBar" sticky="top">
@@ -18,25 +26,21 @@ const TopNav = () => {
         <Navbar.Toggle />
         <Navbar.Collapse style={{paddingLeft: '10px'}}>
           <Nav className="me-auto"  >
-            <NavLink className="navLink">
+            <NavLink className="navLink"onClick={()=>{scrollInto("homeAnchor")}}>
               Home
             </NavLink>
-            <NavLink className="navLink" >
+            <NavLink className="navLink" onClick={()=>{scrollInto("experienceAnchor")}}>
               Experience
             </NavLink>
-            <NavLink className="navLink" >
-              About
+            <NavLink className="navLink" onClick={()=>{scrollInto("projectsAnchor")}}>
+              Projects
             </NavLink>
-            <NavLink className="navLink" >
+            <NavLink className="navLink" onClick={()=>{scrollInto("contactAnchor")}}>
               Contact
             </NavLink>
-
-            {/* <NavLink className="navLink" onClick={() => navigate("/ammo")}>
-              Ammo
-            </NavLink> */}
           </Nav>
           <Nav >
-            <NavLink className="me-2 navLink" >
+            <NavLink className="me-2 navLink" href="./Resume.pdf" target="blank">
               Resume
             </NavLink>
           </Nav>

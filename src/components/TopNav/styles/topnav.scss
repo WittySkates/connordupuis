@@ -2,7 +2,7 @@
 
 .navBar {
   background-color: $nav-color;
-  border-bottom: 3px solid $nav-dark;
+  box-shadow: 0px 1px 4px #000000;
 }
 .navBrand {
   padding-left: 10px;

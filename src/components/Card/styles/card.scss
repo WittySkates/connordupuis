@@ -1,3 +1,4 @@
+@import "../../../colors.scss";
 
 .cardBox{
     min-height: 300px;
@@ -8,6 +9,8 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    box-shadow: 2px 3px 8px #000000;
+    
 }
 
 .cardText{
@@ -55,7 +58,7 @@
     color: #d4d4d8;
     width: 100%;
     height: 40px;
-    background-color: #158465;
+    background-color: $accent;
     border-radius:0 0 4px 4px;
     display: flex;
     div{
@@ -67,7 +70,7 @@
         height: 100%;
         cursor: pointer;
         &:hover{
-            background-color: #2ea382;
+            background-color: $accent-highlight;
             border-radius:0 0 4px 4px;
         }
     }
