@@ -4,6 +4,8 @@
 .App{
   width: 100%;
   height: 100%;
+  margin: 0px;
+  padding: 0px;
   // background-color:  $nav-color;  
   // color: #242424;
 }
@@ -39,19 +41,17 @@
 }
 
 .intro{
-  width: 45%;
   color: #fafafa;
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-right: 20%;
   @media only screen and (max-width: 740px) {
-    width: 100%;
+    padding-right: 0%;
     text-align: center;
   }
   .introTldr{
     font-size: 19px;
-    width: 80%;
     @media only screen and (max-width: 740px) {
-      width: 90%;
       margin-right: 5%;
       margin-left: 5%;
     }

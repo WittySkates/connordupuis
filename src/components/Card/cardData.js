@@ -23,12 +23,7 @@ export const experienceData = {
         description: "Utilized the ServiceNow platform to test and begin implementation of a Natural Language Understanding chatbot which was to assist internal IT issues that arose.",
         languages: ["ServiceNow", "NLP", "NLU", "Javascript"],
     },
-    Scanned:{
-        title:"Scanned",
-        tldr: "Co-Founder",
-        description: "Mobile app for efficient attendance tracking at meetings and events. Won $10,000 and first place in the Next Generation Tech startup competition and were later accepted into the Gator Hatchery at the University of Florida.",
-        languages: ["JavaScript", "React Native", "Firebase", "React"],
-    },  
+
 }
 
 export const projectData = {
@@ -50,5 +45,11 @@ export const projectData = {
         tldr: "University of Florida Undergrad Research",
         description: "Wearable technology that uses ML to predict current action (ie. bicep curls, side lunges). Used TensorFlow to create  a model which is then hosted on a ESP32 microcontroller. Developed software that allows the ESP32 and sensors to communicate and make inferences about the data",
         languages: ["React", "JavaScript", "Firebase", "HTML", "CSS"],
-    }
+    },
+    Scanned:{
+        title:"Scanned",
+        tldr: "Co-Founder",
+        description: "Mobile app for efficient attendance tracking at meetings and events. Won $10,000 and first place in the Next Generation Tech startup competition and were later accepted into the Gator Hatchery at the University of Florida.",
+        languages: ["JavaScript", "React Native", "Firebase", "React"],
+    },  
 }
