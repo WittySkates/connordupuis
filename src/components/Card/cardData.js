@@ -3,7 +3,7 @@ export const experienceData = {
         title:"Raytheon",
         tldr: "Integrated Product and Process Design",
         description: "Replace the existing end of life GUI that relied on Adobe Flash by developing a new front-end using a well-supported framework.",
-        languages: ["Node", "PostgreSQL", "CSS", "HTML", "Vue", "JavaScript"],
+        languages: ["Node", "PostgreSQL",  "Vue", "HTML", "CSS", "JavaScript"],
     },
     NASA: {
         title:"NASA",
@@ -22,5 +22,33 @@ export const experienceData = {
         tldr: "Intership Summer 2020",
         description: "Utilized the ServiceNow platform to test and begin implementation of a Natural Language Understanding chatbot which was to assist internal IT issues that arose.",
         languages: ["ServiceNow", "NLP", "NLU", "Javascript"],
+    },
+    Scanned:{
+        title:"Scanned",
+        tldr: "Co-Founder",
+        description: "Mobile app for efficient attendance tracking at meetings and events. Won $10,000 and first place in the Next Generation Tech startup competition and were later accepted into the Gator Hatchery at the University of Florida.",
+        languages: ["JavaScript", "React Native", "Firebase", "React"],
+    },  
+}
+
+export const projectData = {
+    TrackingTarkov: {
+        title:"Tracking Tarkov",
+        tldr: "Quest Tracker for Escape From Tarkov",
+        description: "Website to keep track of quest progress in Escape From Tarkov. Account based so data live syncs between devices wherever you are. Quest data is directly pulled from official WIKI for most up to date changes.",
+        languages: ["React", "JavaScript", "Firebase", "HTML", "CSS"],
+        live: "https://trackingtarkov.com/"
+    },
+    RapidModelPredictor: {
+        title:"Rapid Model Predictor",
+        tldr: "University of Florida Undergrad Research",
+        description: "Developed an ANN to predict the binary activation response of myelinated nerve fibers from deep brain stimulation. Training, testing, and optimization was parallelized across 200 nodes on the UF supercomputer, HiPerGator.",
+        languages: ["Python", "TensorFlow", "Neuron", "Bash", "HiperGator"],
+    },
+    Pastebles: {
+        title:"Pastebles",
+        tldr: "University of Florida Undergrad Research",
+        description: "Wearable technology that uses ML to predict current action (ie. bicep curls, side lunges). Used TensorFlow to create  a model which is then hosted on a ESP32 microcontroller. Developed software that allows the ESP32 and sensors to communicate and make inferences about the data",
+        languages: ["React", "JavaScript", "Firebase", "HTML", "CSS"],
     }
 }

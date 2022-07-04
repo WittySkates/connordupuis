@@ -36,7 +36,7 @@ const Card = (props) => {
                 &lt;/&gt; Source
             </div>)}
             {live && 
-            (<div onClick={() => {window.open(live,'mywindow')}}>
+            (<div onClick={() => {console.log(live);window.open(live,'mywindow')}}>
                     Live
             </div>)}
         </div>

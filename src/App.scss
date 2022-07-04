@@ -2,28 +2,56 @@
 
 
 .App{
-  width: 100vw;
-  height: 100vh;
-  background-color:  $nav-color;  
+  width: 100%;
+  height: 100%;
+  // background-color:  $nav-color;  
+  // color: #242424;
 }
 
 .section{
-  // background-color: black;
-  // margin-left: 10%;
-  // margin-right: 10%;
+  width: 100%;
+  height: 100%;
+}
+
+.section > div{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#home{
+  background-color: $nav-color;
 }
 
 #experience{
-  background-color: black;
-  width: 100%;
-  height: 100%;
+  background-color: $nav-dark;
+}
+
+#projects{
+  background-color: $nav-color;
+
+}
+
+.intro{
+  h1{
+    color: #fafafa
+  }
 }
 
 
 
 .experienceGrid{
-  margin-left: 10%;
-  margin-right: 10%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  @media only screen and (max-width: 1480px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media only screen and (max-width: 740px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.projectGrid{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
