@@ -9,6 +9,7 @@ export const Contact = () => {
 	const form = useRef();
 	const [success, setSuccess] = useState(false);
 	const [error, setError] = useState(false);
+	const [noBody, setNoBody] = useState(false);
 	const [toSend, setToSend] = useState({
 		name: '',
 		email: '',
@@ -18,10 +19,24 @@ export const Contact = () => {
 
 	const handleChange = (e) => {
 		setToSend({ ...toSend, [e.target.name]: e.target.value });
-	  };
+		document.getElementById(e.target.id).style.outline = "none"
+	  	};
 
 	const sendEmail = (e) => {
 		e.preventDefault();
+
+		if(toSend.name === ''){
+			document.getElementById(e.target.name.id).style.outline = "2px #ff2121 solid"
+		}
+		if(toSend.email === ''){
+			document.getElementById(e.target.email.id).style.outline = "2px #ff2121 solid"
+		}
+		if(toSend.message === ''){
+			document.getElementById(e.target.message.id).style.outline = "2px #ff2121 solid"
+		}
+		if(toSend.email === '' || toSend.message === '' || toSend.name === '' ){
+			return;
+		}
 
 		emailjs.sendForm(data.serviceId, 'template_opza1mc', form.current, data.publicKey)
 		.then((result) => {
@@ -39,8 +54,9 @@ export const Contact = () => {
 			setTimeout(() => {
 				setSuccess(false);
 				setError(false);
+				setNoBody(false);
 			}, 5000)
-		);;
+		);
   };
 
   return (    
@@ -49,9 +65,10 @@ export const Contact = () => {
 			<div>
 				Name
 			<input
+				id='name'
 				type='text'
 				name='name'
-				placeholder='Enter your name'
+				placeholder='Name'
 				value={toSend.name}
 				onChange={handleChange}
 			/>
@@ -60,9 +77,10 @@ export const Contact = () => {
 			<div>
 				Email
 				<input
+					id='input'
 					type='text'
 					name='email'
-					placeholder='example_email@email.com'
+					placeholder='Email'
 					value={toSend.email}
 					onChange={handleChange}
 				/>
@@ -71,23 +89,25 @@ export const Contact = () => {
 			<div>
 				Message
 				<textarea
+					id='message'
 					rows={10}
 					style={{width:"100%"}}
 					type='text'
 					name='message'
-					placeholder='Your message'
+					placeholder='Message'
 					value={toSend.message}
 					onChange={handleChange}
 				/>
 			</div>
 
-			<div>
-				<button type='submit'>Submit</button>
-			</div>
+			<button type='submit'>Submit</button>
+
 			<div>
 				<div className='messageStatus'>
 				{(success && !error ) && (<div className='messageStatusSuccess'>Message sent successfully.</div>) }
 				{(!success && error ) && (<div className='messageStatusFailure'>Message failed.</div>) }
+				{(noBody) && (<div className='messageStatusFailure'>Must fill out form.</div>) }
+
 				</div>
 			</div>
 			
