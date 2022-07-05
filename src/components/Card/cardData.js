@@ -28,7 +28,7 @@ export const experienceData = {
         title:"Raymond James",
         tldr: "Intership Summer 2020",
         description: "Utilized the ServiceNow platform to test and begin implementation of a Natural Language Understanding chatbot which was to assist internal IT issues that arose.",
-        languages: ["ServiceNow", "NLP", "NLU", "Javascript"],
+        languages: ["ServiceNow", "NLP", "NLU", "JavaScript"],
     },
 
 }
