@@ -13,15 +13,22 @@ const  App = () => {
 
         <div className="section" id="home">
           <div id="homeAnchor" style={{position: "relative", top: "-300px", left: 0}}></div>
-          <div className="intro">
-            <h1>
-              Hey there! My name is Connor Dupuis and I am a passionate{" "}
-              <span style={{color:"#355cc7"}}>Developer</span>
-              .
-            </h1>
-            <div className="introTldr">
-            I strive to create solutions that have a meaningful impact while also maintaining efficiency and scalability.
+          <div className="introWrapper">
+            <div className="intro">
+              <h1>
+                Hey there! My name is Connor Dupuis and I am a passionate{" "}
+                <span style={{color:"#355cc7"}}>Developer</span>
+                .
+              </h1>
+              <div className="introTldr">
+              I strive to create solutions that have a meaningful impact while also maintaining efficiency and scalability.
+              </div>
             </div>
+            {/* <div className="arrow">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 150" stroke="#355cc7" strokeWidth={2} fill="transparent"> 
+                <path d="M 0 110 C 160 140 230 115 345 45 L 390 15 L 358 58 L 390 15 L 336 30 "></path>
+              </svg>
+            </div> */}
           </div>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120" fill="#1b1b1b"> 
             <path d="M1440 21.21V120H0V21.21C120 35.07 240 42 360 42s240-6.93 360-20.79c88.328-8.794 154.574-14.333 198.738-16.618A3120.562 3120.562 0 0 1 1080 .42c120 0 240 6.93 360 20.79z"></path>
@@ -41,7 +48,7 @@ const  App = () => {
             ))}
           </div>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 240" fill="#242424">
-            <path d="M 0 240 L 0 30 C 230 80 290 40 460 90 C 600 130 640 160 960 130 C 1160 120 1160 190 1440 210 L 1440 240 Z"></path>
+            <path d="M 0 240 L 0 200 C 70 160 230 230 480 150 C 710 80 870 160 1010 110 C 1180 50 1310 20 1440 30 L 1440 240 Z"></path>
           </svg>
         </div>
 
@@ -57,9 +64,11 @@ const  App = () => {
               <Card key={index} data={projectData[map]} color={"#27272a"}/>
             ))}
           </div>
+
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 240" fill="#1b1b1b">
-            <path d="M 0 240 L 0 200 C 70 160 230 230 480 150 C 710 80 870 160 1010 110 C 1180 50 1310 20 1440 30 L 1440 240 Z"></path>
+            <path d="M 0 240 L 0 30 C 230 80 290 40 460 90 C 600 130 640 160 960 130 C 1160 120 1160 190 1440 210 L 1440 240 Z"></path>
           </svg>
+  
         </div>
 
         <div className="section" id="contact">

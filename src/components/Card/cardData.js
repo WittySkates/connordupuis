@@ -1,4 +1,10 @@
 export const experienceData = {
+    Amazpm: {
+        title:"Amazon",
+        tldr: "Software Development Engineer",
+        description: "Part of the Selling Partners Promotions org and on the SPARX team where we handle all Coupon creation and management for sellers across Amazon.com.",
+        languages: ["Java", "Spring",  "React", "TypeScript", "Coral"],
+    },
     Raytheon: {
         title:"Raytheon",
         tldr: "Integrated Product and Process Design",
@@ -10,6 +16,7 @@ export const experienceData = {
         tldr: "Mission Concept Academy",
         description: "Develop a payload that can map surface water, and  water ice in the top 1 meter of the regolith, for most of the Permanently Shadowed Regions (PSRs) at the lunar South Polar Region.",
         languages: ["CAD", "Python", "Siemens nx", "Arduino"],
+        source: "./HydraFinal.pdf"
     },
     RaymondJames2021:{
         title:"Raymond James",
@@ -32,19 +39,22 @@ export const projectData = {
         tldr: "Quest Tracker for Escape From Tarkov",
         description: "Website to keep track of quest progress in Escape From Tarkov. Account based so data live syncs between devices wherever you are. Quest data is directly pulled from official WIKI for most up to date changes.",
         languages: ["React", "JavaScript", "Firebase", "HTML", "CSS"],
-        live: "https://trackingtarkov.com/"
+        live: "https://trackingtarkov.com/",
+        source: "https://github.com/WittySkates/trackingtarkov"
     },
     RapidModelPredictor: {
         title:"Rapid Model Predictor",
         tldr: "University of Florida Undergrad Research",
         description: "Developed an ANN to predict the binary activation response of myelinated nerve fibers from deep brain stimulation. Training, testing, and optimization was parallelized across 200 nodes on the UF supercomputer, HiPerGator.",
         languages: ["Python", "TensorFlow", "Neuron", "Bash", "HiperGator"],
+        source: "./RapidModelThesis.pdf"
     },
     Pastebles: {
         title:"Pastebles",
         tldr: "University of Florida Undergrad Research",
         description: "Wearable technology that uses ML to predict current action (ie. bicep curls, side lunges). Used TensorFlow to create  a model which is then hosted on a ESP32 microcontroller. Developed software that allows the ESP32 and sensors to communicate and make inferences about the data",
         languages: ["React", "JavaScript", "Firebase", "HTML", "CSS"],
+        source: "https://github.com/WittySkates/pasteables"
     },
     Scanned:{
         title:"Scanned",

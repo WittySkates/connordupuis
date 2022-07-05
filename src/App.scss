@@ -40,6 +40,12 @@
   padding-bottom: 40px;
 }
 
+.introWrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .intro{
   color: #fafafa;
   padding-top: 30px;
@@ -56,8 +62,17 @@
       margin-left: 5%;
     }
   }
-  h1{
+}
+
+.arrow{
+  @media only screen and (max-width: 740px) {
+   display: none;
   }
+  position: relative;
+  fill: black;
+  background-color: transparent;
+  width: 500px;
+  padding-top: 3%;
 }
 
 .experienceGrid{

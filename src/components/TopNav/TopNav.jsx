@@ -40,7 +40,7 @@ const scrollInto = (id) =>{
             </NavLink>
           </Nav>
           <Nav >
-            <NavLink className="me-2 navLink" href="./Resume.pdf" target="blank">
+            <NavLink className="me-2 navLink" href="./Resume.pdf" target="blank" style={{paddingRight:"10px"}}>
               Resume
             </NavLink>
           </Nav>
