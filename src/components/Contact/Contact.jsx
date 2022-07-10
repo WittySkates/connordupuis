@@ -9,7 +9,6 @@ export const Contact = () => {
 	const form = useRef();
 	const [success, setSuccess] = useState(false);
 	const [error, setError] = useState(false);
-	const [noBody, setNoBody] = useState(false);
 	const [toSend, setToSend] = useState({
 		name: '',
 		email: '',
@@ -54,7 +53,6 @@ export const Contact = () => {
 			setTimeout(() => {
 				setSuccess(false);
 				setError(false);
-				setNoBody(false);
 			}, 5000)
 		);
   };
@@ -64,14 +62,14 @@ export const Contact = () => {
 		<div className='formContainer'>
 			<div>
 				Name
-			<input
-				id='name'
-				type='text'
-				name='name'
-				placeholder='Name'
-				value={toSend.name}
-				onChange={handleChange}
-			/>
+				<input
+					id='name'
+					type='text'
+					name='name'
+					placeholder='Name'
+					value={toSend.name}
+					onChange={handleChange}
+				/>
 			</div>
 
 			<div>
@@ -106,8 +104,6 @@ export const Contact = () => {
 				<div className='messageStatus'>
 				{(success && !error ) && (<div className='messageStatusSuccess'>Message sent successfully.</div>) }
 				{(!success && error ) && (<div className='messageStatusFailure'>Message failed.</div>) }
-				{(noBody) && (<div className='messageStatusFailure'>Must fill out form.</div>) }
-
 				</div>
 			</div>
 			
